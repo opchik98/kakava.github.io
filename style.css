@@ -36,9 +36,15 @@ a:hover {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 #footer {
 	margin: 0 auto;
 	margin-top: 50px;
+}
+
+#router	{
+	margin-top: 13px;
+	margin-bottom: 13px;
 }
