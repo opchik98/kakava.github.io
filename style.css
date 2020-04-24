@@ -4,14 +4,17 @@
 	margin: 0 auto;
 }
 
-.index {
+.align {
 	text-align: center;
 }
 
-.header {
+.footer {
+	margin: 0 auto;
+	margin-top: 50px;
 	text-align: center;
 }
 
+/*other*/
 h1 {
 	margin-left: 50px;
 	margin-right: 50px;
@@ -23,7 +26,6 @@ a {
 	font-size: 16px;
 	background-color: #EAEAEA;
 	border: 1px solid #737373;
-	margin-bottom: 10px;
 	padding: 1px;
 }
 
@@ -31,28 +33,62 @@ a:hover {
 	border: 5px solid #737373;
 }
 
-#youtube {
+div {
+	margin-bottom: 13px;
+}
+
+.router	{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+/*youtube settings*/
+
+.youtube {
+	cursor: pointer;
+	border: 1px solid #737373;
+	background-color: #EAEAEA;
 	color: red;
-	margin-right: 10px;
-}
-
-.google {
-	margin-bottom: 13px;
-	margin-top: 13px;
-}
-
-#google {
-	color: #00A5E1;
-	margin-right: 10px;
-}
-
-.footer {
+	display:inline-block;
+	width: 27%;
+	max-width: 84px;
 	margin: 0 auto;
-	margin-top: 50px;
-	text-align: center;
 }
 
-#router	{
-	margin-top: 13px;
+.youtube:hover {
+	border: 5px solid #737373;
+}
+
+/*google settings*/
+.google {
+	cursor: pointer;
+	width: 100%;
+	max-width: 69px;
+	border: 1px solid #737373;
+	background-color: #EAEAEA;
+	color: #00A5E1;
+	margin: 0 auto;
 	margin-bottom: 13px;
+	margin-top: 13px;
+}
+
+.google:hover {
+	border: 5px solid #737373;
+}
+
+/*github settings*/
+.github {
+	cursor: pointer;
+	width: 100%;
+	max-width: 70px;
+	border: 1px solid #737373;
+	background-color: #EAEAEA;
+	color: #434343;
+	margin: 0 auto;
+	margin-bottom: 13px;
+	margin-top: 13px;
+}
+
+.github:hover {
+	border: 5px solid #737373;
 }
