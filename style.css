@@ -8,10 +8,20 @@
 	text-align: center;
 }
 
+/*footer*/
 .footer {
 	margin: 0 auto;
 	margin-top: 50px;
 	text-align: center;
+}
+
+#copyright {
+	margin-left: auto;
+	margin-right: auto;
+	color: #61616E;
+	cursor: pointer;
+	width: 100%;
+	width: 230px;
 }
 
 /*other*/
@@ -46,12 +56,12 @@ div {
 
 .youtube {
 	cursor: pointer;
+	width: 27%;
+	max-width: 84px;
 	border: 1px solid #737373;
 	background-color: #EAEAEA;
 	color: red;
 	display:inline-block;
-	width: 27%;
-	max-width: 84px;
 	margin: 0 auto;
 }
 
@@ -63,13 +73,14 @@ div {
 .google {
 	cursor: pointer;
 	width: 100%;
-	max-width: 69px;
+	max-width: 87px;
+	margin-bottom: 13px;
+	margin-top: 13px;
 	border: 1px solid #737373;
 	background-color: #EAEAEA;
 	color: #00A5E1;
+	display:inline-block;
 	margin: 0 auto;
-	margin-bottom: 13px;
-	margin-top: 13px;
 }
 
 .google:hover {
