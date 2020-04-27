@@ -2,10 +2,24 @@
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
+
+	/*background: url("assets/images/bg.png") center no-repeat;
+	background-size: cover;*/
 }
 
 .align {
 	text-align: center;
+}
+
+.header:after {
+	display: block;
+
+	margin: 20px auto;
+	content: "";
+
+	background-color: #6A567E;
+	width: 227px;
+	height: 3px;
 }
 
 /*footer*/
@@ -24,7 +38,7 @@ h1 {
 }
 
 a {
-	color: green;
+	color: #36893A;
 	font-size: 16px;
 	background-color: #EAEAEA;
 
@@ -54,6 +68,7 @@ div {
 .youtube {
 	font-family: 'Crete Round', serif;
 	padding: 1px 4px;
+	position: relative;
 
 	border: 1px solid #737373;
 	background-color: #EAEAEA;
