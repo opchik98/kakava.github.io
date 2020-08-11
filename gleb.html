@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color: #181a1b;
+                overflow: hidden;
+            }
+            .text{
+                color: #e8e6e3;
+                position: absolute;
+                font-size: 32px;
+                text-transform: uppercase;
+                animation: text 4s linear infinite;
+            }
+
+            @keyframes text{
+                0%{
+                    left: 0px;
+                }
+                100%{
+                    left: 140%;
+                }
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                var body = document.body;
+                var height = document.documentElement.clientHeight;
+                var num = 100;
+                var offset = height / num;
+                var iter = 0;
+
+                function generate() {
+                    if(iter == 5) return;
+                    for(let i = 0; i < num; i++) {
+                        var el = document.createElement("div");
+                        el.className = "text";
+                        el.innerHTML = "глеб живи, бан хероку хак";
+                        el.style.top = offset * i + "px";
+                        el.style.animationDelay = Math.random() + "s";
+                        body.appendChild(el);
+                    }
+                    iter++;
+                }
+
+                setInterval(generate, 1200);
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
