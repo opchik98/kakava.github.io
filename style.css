@@ -1,1 +1,308 @@
-body{background-color:#3A3A3AFF;color:#D8D8D8FF;line-height:20px}.container{width:100%;max-width:1000px;margin:0 auto}.align{text-align:center}.header:after{display:block;width:227px;height:3px;margin:20px auto;content:'';background-color:#6a567e}.footer{font-family:'Crete Round',serif;margin:0 auto;margin-top:50px;text-align:center}h1{margin-right:50px;margin-left:50px;color:#DE9300}a{font-size:16px;padding:1px 3px;text-decoration:none;color:#307731;border:1px solid #5E5661;background-color:#A8A8A8}a:hover{transition:border .1s;border:5px solid #5E5661}div{margin-bottom:13px}#menu{padding:5px 0;color:#333;position:absolute;width:160px;border:1px solid #000;background-color:#C4C4C4;border-radius:5%;font-family:Verdana;line-height:20px;font-size:14px;z-index:99;visibility:hidden}#menu>div{margin:0;padding-left:10px;padding-right:10px}#menu>div:hover{background-color:#664DFF;color:#FFF;cursor:pointer}.google{font-family:'Crete Round',serif;display:inline-block;vertical-align:middle;margin:0 auto;margin-top:13px;margin-bottom:13px;padding:1px 4px;color:#005DB7;border:1px solid #5E5661;background-color:#A8A8A8}.google:hover{border:5px solid #5E5661}.youtube{font-family:'Crete Round',serif;position:relative;display:inline-block;vertical-align:middle;margin:0 auto;padding:1px 4px;color:red;border:1px solid #5E5661;background-color:#A8A8A8}.youtube:hover{border:5px solid #5E5661}.github{font-family:'Crete Round',serif;vertical-align:middle;margin:0 auto;margin-top:13px;margin-bottom:13px;color:#434343;border:1px solid #5E5661;background-color:#A8A8A8}.github:hover{border:5px solid #5E5661}.router{margin-top:13px;margin-bottom:13px}.server{display:inline-block;margin-left:auto;margin-right:auto;background-color:inherit;border:none;color:#757584;cursor:pointer;width:100%;max-width:230px}.server:hover{border:none}.overlay{opacity:0;visibility:hidden;position:fixed;top:0;left:0;width:100%;height:100%;background-color:hsla(0,0%,0%,.005);z-index:20;transition:.3s all}.modal{font-family:'Crete Round',serif;opacity:0;visibility:hidden;width:100%;max-width:500px;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:30;color:#A8A8A8;box-shadow:0 3px 10px -.5px hsla(0,0%,0%,.005);text-align:center;padding:30px;border-radius:3px;background-color:#000;transition:.3s all}.modal.active,.overlay.active{opacity:1;visibility:visible}.modal__cross{width:15px;height:15px;position:absolute;top:20px;right:20px;fill:#444;cursor:pointer}.modal__link{background-color:inherit;border:none}.modal__link:hover{text-decoration:underline;border:none}
+/*Fonts*/
+/*crete-round: 'Crete Round', serif;*/
+
+/*colors*/
+/*light-gray: #A8A8A8;*/
+/*gray: #3A3A3AFF;*/
+/*violet: #5E5661;*/
+
+
+body {
+    background-color: #3A3A3AFF;
+
+    color: #D8D8D8FF;
+
+    line-height: 20px;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    /*background: url("assets/images/bg.png") center no-repeat;
+	background-size: cover;*/
+}
+
+.align {
+    text-align: center;
+}
+
+
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+
+
+.header:after {
+    display: block;
+
+    width: 227px;
+    height: 3px;
+    margin: 20px auto;
+
+    content: '';
+
+    background-color: #6a567e;
+}
+
+/*footer*/
+.footer {
+    font-family: 'Crete Round', serif;
+
+    margin: 0 auto;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+/*other*/
+h1 {
+    margin-right: 50px;
+    margin-left: 50px;
+
+    color: #DE9300;
+}
+
+a {
+    font-size: 16px;
+
+    padding: 1px 3px;
+
+    text-decoration: none;
+
+    color: #307731;
+    border: 1px solid #5E5661;
+    background-color: #A8A8A8;
+}
+
+a:hover {
+    transition: border .1s;
+
+    border: 5px solid #5E5661;
+}
+
+div {
+    margin-bottom: 13px;
+}
+
+#menu {
+    padding: 5px 0;
+
+    color: #333;
+
+    position: absolute;
+    width: 160px;
+
+    border: 1px solid #000000;
+    background-color: #C4C4C4;
+    border-radius: 5%;
+
+    font-family: "Verdana";
+
+    line-height: 20px;
+    font-size: 14px;
+    z-index: 99;
+
+    visibility: hidden;
+}
+#menu > div {
+    margin: 0;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menu > div:hover {
+    background-color: #664DFF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+
+/*google settings*/
+.google {
+    font-family: 'Crete Round', serif;
+
+    display: inline-block;
+
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding: 1px 4px;
+
+    color: #005DB7;
+    border: 1px solid #5E5661;
+    background-color: #A8A8A8;
+}
+
+.google:hover {
+    border: 5px solid #5E5661;
+}
+
+
+/*youtube settings*/
+
+.youtube {
+    font-family: 'Crete Round', serif;
+
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 1px 4px;
+
+    color: red;
+    border: 1px solid #5E5661;
+    background-color: #A8A8A8;
+}
+
+.youtube:hover {
+    border: 5px solid #5E5661;
+}
+
+/* github settings */
+.github {
+    font-family: 'Crete Round', serif;
+
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 13px;
+    margin-bottom: 13px;
+
+    color: #434343;
+    border: 1px solid #5E5661;
+    background-color: #A8A8A8;
+}
+
+.github:hover {
+    border: 5px solid #5E5661;
+}
+
+// Router
+.router {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.server {
+    display: inline-block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: inherit;
+
+    border: none;
+    color: #757584;
+    cursor: pointer;
+
+    width: 100%;
+    max-width: 230px;
+}
+
+.server:hover {
+    border: none;
+}
+
+
+
+/*modal*/
+
+/* Стили для подложки */
+
+.overlay {
+
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,0%,.005);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+
+    font-family: 'Crete Round', serif;
+
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+    color: #A8A8A8;
+    box-shadow: 0 3px 10px -.5px fade(hsl(0, 0, 0), .5); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #000;
+    transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+.modal__link {
+    background-color: inherit;
+
+    border: none;
+
+
+}
+
+.modal__link:hover {
+    text-decoration: underline;
+    border: none;
+}
